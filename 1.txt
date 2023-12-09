@@ -1,0 +1,39 @@
+a={}
+for i in range (0,10):
+    a[i]=int(input("enter marks"))
+max1=0
+
+for i in range(0,10):
+  if a[i]>max1:
+    max1=a[i]
+print("the maximum marks is:",max1)
+
+min1=a[i]
+for i in range (0,10):
+   if a[i]<min1 and a[i]!=-1:
+      min=a[i]
+print("the minimum marks is:",min1)
+
+fcount=0
+for i in range (0,10):
+  count=0
+  for j in range (0,10):
+     if a[i]==a[j]:
+       count=count+1
+     if fcount<count:
+         fcount==count
+         most=a[i]
+print("marks score by most of the student",most)
+
+count=0
+for i in range(0,10):
+   if a[i]==-1:
+      count=count+1
+print("the absent student are",count)
+
+sum=0
+for i in range(0,10):
+    if a[i]!=-1:
+       sum=sum+a[i]
+       average=sum/10
+print("the average of marks are",average)
